@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Le chiffre mystère</title>
+
+</head>
+
+<body>
+<center>
+<script>
+hasard= Math.floor(Math.random()*100)
+function justeNombre(){
+
+nombre= document.fo.monTexte.value
+document.getElementById("ran").innerHTML= hasard
+
+if (nombre< hasard){
+document.getElementById("res").innerHTML="plus"
+}
+
+else if (nombre> hasard) {
+document.getElementById("res").innerHTML="moins"
+
+}
+else {
+document.getElementById("res").innerHTML="bingo"
+}
+}
+
+</script>
+<h1> Trouvez le chiffre mystère</h1>
+<br><br>
+<p id= "ran"> valeur random</p>
+
+
+
+<br><br>
+<p id= "res" >nombre mystère entre 1 et 40</p>
+<br><br>
+<form name="fo" >
+<input type="number" min= "1" max="40" name="monTexte">
+<br><br>
+<input type="button" value="Valider" onclick="justeNombre()">
+</form>
+
+</center>
+
+</body>
+</html>
