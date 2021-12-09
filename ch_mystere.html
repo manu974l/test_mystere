@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
+  <!-- appeler le script jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
 <meta charset="utf-8">
 <title>Le chiffre mystère</title>
 
@@ -9,7 +13,7 @@
 <body>
 <center>
 <script>
-hasard= Math.floor(Math.random()*100)
+hasard= Math.floor(Math.random()*40)
 function justeNombre(){
 
 nombre= document.fo.monTexte.value
@@ -27,7 +31,7 @@ else {
 document.getElementById("res").innerHTML="bingo"
 }
 }
-
+$('#ran').hide();
 </script>
 <h1> Trouvez le chiffre mystère</h1>
 <br><br>
